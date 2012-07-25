@@ -16,11 +16,11 @@ msgstr ""
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
 msgid "Change display-method"
-msgstr "Darstellung ändern"
+msgstr "Darstellung der Quelle ändern"
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:96
 msgid "Manage the view of the folder that redirects to this page."
-msgstr "Darstellung des Ordners der auf diesen Inhalt weiterleitet bearbeiten."
+msgstr "Darstellung des Ordners, der hierher weiterleitet, bearbeiten."
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
 msgid "Manage view"
