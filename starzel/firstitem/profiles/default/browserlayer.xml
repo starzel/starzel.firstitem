@@ -1,0 +1,4 @@
+<layers>
+    <layer name="starzel.firstitem"
+           interface="starzel.firstitem.interfaces.IFirstItemLayer" />
+</layers>

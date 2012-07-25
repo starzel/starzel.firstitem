@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-07-25 14:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
+msgid "Change display-method"
+msgstr "Darstellung ändern"
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:96
+msgid "Manage the view of the folder that redirects to this page."
+msgstr "Darstellung des Ordners der auf diesen Inhalt weiterleitet bearbeiten."
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
+msgid "Manage view"
+msgstr "Darstellung anpassen"
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
+msgid "Select a display-method for redirecting folder."
+msgstr "Wählen Sie eine Darstellungsart des hierhin weiterleitenden Ordners aus."
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
+msgid "Show contents of redirecting folder."
+msgstr "Zeigt die Inhalte des hierhin weiterleitenden Ordners"
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
+msgid "Show folder_contents"
+msgstr "Inhalte anzeigen"
+
+#: View description in configure.zcml
+msgid "The viewer will be redirected to the first content-item inside this folder."
+msgstr "Der Besucher wird auf das erste Objekt innerhalb des Ordners weitergeleitet."
+
+#: View title in configure.zcml
+msgid "Forward to first item"
+msgstr "Weiterleitung auf ersten Inhalt"

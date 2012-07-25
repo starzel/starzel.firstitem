@@ -1,0 +1,48 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="starzel.firstitem">
+
+    <i18n:registerTranslations directory="locales"/>
+    <include package="z3c.jbot" file="meta.zcml" />
+    
+    <browser:jbot
+        directory="jbot_templates"
+        layer=".interfaces.IFirstItemLayer" />
+
+    <browser:page
+       name="firstitem_view"
+       for="Products.CMFCore.interfaces._content.IFolderish"
+       class=".firstitemfolder.FirstItemView"
+       permission="zope2.View"
+       />
+
+    <browser:page
+       name="firstitemview_helper"
+       for="*"
+       class=".firstitemfolder.FirstItemView_Helper"
+       permission="zope2.View"
+       />
+
+    <include package="plone.app.contentmenu" />
+
+    <browser:menuItem
+        for="Products.CMFCore.interfaces._content.IFolderish"
+        menu="plone_displayviews"
+        title="Forward to first item"
+        action="firstitem_view"
+        description="The viewer will be redirected to the first content-item inside this folder."
+        />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="starzel.firstitem"
+        directory="profiles/default"
+        description="Installs the starzel.firstitem package"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+  
+</configure>

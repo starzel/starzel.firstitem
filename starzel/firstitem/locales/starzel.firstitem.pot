@@ -1,0 +1,51 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-07-25 14:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: starzel.firstitem\n"
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
+msgid "Change display-method"
+msgstr ""
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:96
+msgid "Manage the view of the folder that redirects to this page."
+msgstr ""
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
+msgid "Manage view"
+msgstr ""
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
+msgid "Select a display-method for redirecting folder."
+msgstr ""
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
+msgid "Show contents of redirecting folder."
+msgstr ""
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
+msgid "Show folder_contents"
+msgstr ""
+
+
+#: View description in configure.zcml
+msgid "The viewer will be redirected to the first content-item inside this folder."
+msgstr ""
+
+#: View title in configure.zcml
+msgid "Forward to first item"
+msgstr ""
