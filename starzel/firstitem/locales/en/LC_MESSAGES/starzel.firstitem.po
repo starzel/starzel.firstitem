@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-07-25 14:35+0000\n"
+"POT-Creation-Date: 2012-07-26 09:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,26 +15,31 @@ msgstr ""
 "Domain: DOMAIN\n"
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
-msgid "Change display-method"
+msgid "Change display-method of redirecting folder"
+msgstr ""
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
+msgid "Manage redirect"
 msgstr ""
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:96
 msgid "Manage the view of the folder that redirects to this page."
 msgstr ""
 
-#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
-msgid "Manage view"
-msgstr ""
-
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
-msgid "Select a display-method for redirecting folder."
+msgid "Select a display-method for the redirecting folder."
 msgstr ""
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
-msgid "Show contents of redirecting folder."
+msgid "Show content of redirecting folder"
 msgstr ""
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
-msgid "Show folder_contents"
+msgid "Show contents of redirecting folder using folder_contents."
+msgstr ""
+
+#. Default: "You have been forwarded from \"%s\". Use the menu \"Manage redirect\" to change this."
+#: ./firstitemfolder.py:25
+msgid "redirect_info"
 msgstr ""
 

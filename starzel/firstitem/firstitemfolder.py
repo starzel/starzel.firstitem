@@ -1,9 +1,13 @@
+from AccessControl import getSecurityManager
 from Acquisition import aq_base, aq_inner
+from Products.CMFCore import permissions
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces import ISiteRoot
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.statusmessages.interfaces import IStatusMessage
 from zope.component import getMultiAdapter
+from starzel.firstitem import FirstItemMessageFactory as _
 
 
 class FirstItemView(BrowserView):
@@ -19,6 +23,12 @@ class FirstItemView(BrowserView):
         folder_contents = portal_catalog(path=dict(query=currentpath, depth=1), sort_on='getObjPositionInParent')
         if folder_contents:
             first_item = folder_contents[0]
+            if getSecurityManager().checkPermission(permissions.ModifyPortalContent, context):
+                messages = IStatusMessage(self.request)
+                msg = _(u'redirect_info', 
+                      default=_(u'You have been forwarded from "${title}". Use the menu "Manage redirect" to change this.'),
+                      mapping={'title': context.title})
+                messages.addStatusMessage(msg, type="info")
             self.request.response.redirect(first_item.getURL())
         else:
             return self.template()

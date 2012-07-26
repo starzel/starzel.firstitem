@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-07-25 14:35+0000\n"
+"POT-Creation-Date: 2012-07-26 09:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,34 +14,39 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
-msgid "Change display-method"
-msgstr "Darstellung der Quelle ändern"
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
+msgid "Manage redirect"
+msgstr "Weiterleitung bearbeiten"
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:96
 msgid "Manage the view of the folder that redirects to this page."
 msgstr "Darstellung des Ordners, der hierher weiterleitet, bearbeiten."
 
-#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
-msgid "Manage view"
-msgstr "Darstellung anpassen"
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
+msgid "Change display of redirecting folder"
+msgstr "Darstellung des weiterleitenden Ordners anpassen"
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
-msgid "Select a display-method for redirecting folder."
-msgstr "Wählen Sie eine Darstellungsart des hierhin weiterleitenden Ordners aus."
+msgid "Select a display-method for the redirecting folder."
+msgstr "Wählen Sie eine Darstellungsart für den Ordner der hierher weiterleitet."
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
-msgid "Show contents of redirecting folder."
-msgstr "Zeigt die Inhalte des hierhin weiterleitenden Ordners"
+msgid "Show content of redirecting folder"
+msgstr "Inhalte des weiterleitenden Ordners anzeigen"
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:114
-msgid "Show folder_contents"
-msgstr "Inhalte anzeigen"
+msgid "Show contents of redirecting folder using folder_contents."
+msgstr "Zeigt die Inhalte des weiterleitenden Ordners mittels folder_contents an."
 
-#: View description in configure.zcml
-msgid "The viewer will be redirected to the first content-item inside this folder."
-msgstr "Der Besucher wird auf das erste Objekt innerhalb des Ordners weitergeleitet."
+#. Default: "You have been forwarded from \"${title}\". Use the menu \"Manage redirect\" to change this."
+#: ./firstitemfolder.py:25
+msgid "redirect_info"
+msgstr "Sie wurden hierher weitergeleitet von \"${title}\". Verwenden Sie das Menu \"Weiterleitung bearbeiten\" um das zu ändern."
 
 #: View title in configure.zcml
 msgid "Forward to first item"
 msgstr "Weiterleitung auf ersten Inhalt"
+
+#: View description in configure.zcml
+msgid "The viewer will be redirected to the first content-item inside this folder."
+msgstr "Der Besucher wird auf das erste Objekt innerhalb des Ordners weitergeleitet."

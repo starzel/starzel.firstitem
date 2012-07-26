@@ -96,7 +96,7 @@
                 <a href="#" 
                    title="Manage the view of the folder that redirects to this page."
                    i18n:attributes="title">
-                    <span i18n:translate="" tal:omit-tag="">Manage view</span>    
+                    <span i18n:translate="" tal:omit-tag="">Manage redirect</span>    
                     <span class="arrowDownAlternative">&#9660;</span>
                 </a>
             </dt>
@@ -104,18 +104,18 @@
                 <ul>
                     <li>
                         <a tal:attributes="href string:${redirect_source}/select_default_view"
-                           title="Select a display-method for redirecting folder."
+                           title="Select a display-method for the redirecting folder."
                            i18n:attributes="title"
                            i18n:translate="">
-                           Change display-method
+                           Change display of redirecting folder
                         </a>
                     </li>
                     <li>
                         <a tal:attributes="href string:${redirect_source}/folder_contents"
-                           title="Show contents of redirecting folder."
+                           title="Show contents of redirecting folder using folder_contents."
                            i18n:attributes="title"
                            i18n:translate="">
-                           Show folder_contents 
+                           Show content of redirecting folder 
                         </a>
                     </li>
                 </ul>

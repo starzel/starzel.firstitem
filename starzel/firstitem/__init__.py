@@ -1,3 +1,5 @@
+from zope.i18nmessageid import MessageFactory
+FirstItemMessageFactory = MessageFactory('starzel.firstitem')
 # -*- extra stuff goes here -*-
 
 
