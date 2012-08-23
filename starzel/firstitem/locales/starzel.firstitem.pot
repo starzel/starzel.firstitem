@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-07-26 09:39+0000\n"
+"POT-Creation-Date: 2012-08-23 16:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,15 +41,8 @@ msgstr ""
 msgid "Show contents of redirecting folder using folder_contents."
 msgstr ""
 
-#. Default: "You have been forwarded from \"${title}\". Use the menu \"Manage redirect\" to change this."
-#: ./firstitemfolder.py:25
+#. Default: "You have been forwarded from \"${title_from}\" (<a href=\"${content_from}\">contents</a> | <a href=\"${changeview_from}\">change view</a>) to \"${title_to}\". Use the menu \"Manage redirect\" to change this."
+#: ./firstitemfolder.py:30
 msgid "redirect_info"
 msgstr ""
 
-#: View title in configure.zcml
-msgid "Forward to first item"
-msgstr ""
-
-#: View description in configure.zcml
-msgid "The viewer will be redirected to the first content-item inside this folder."
-msgstr ""

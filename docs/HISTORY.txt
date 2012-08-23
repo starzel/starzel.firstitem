@@ -4,4 +4,6 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- patch global_statusmessage.pt to allow rendering of links
+
 - Initial release [pbauer]

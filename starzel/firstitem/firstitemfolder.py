@@ -2,7 +2,7 @@ from AccessControl import getSecurityManager
 from Acquisition import aq_base, aq_inner
 from Products.CMFCore import permissions
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.interfaces import ISiteRoot
+# from Products.CMFCore.interfaces import ISiteRoot
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.statusmessages.interfaces import IStatusMessage
@@ -17,17 +17,29 @@ class FirstItemView(BrowserView):
 
     def __call__(self):
         context = self.context
-        portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
         portal_catalog = getToolByName(context, 'portal_catalog')
         currentpath = '/'.join(context.getPhysicalPath())
-        folder_contents = portal_catalog(path=dict(query=currentpath, depth=1), sort_on='getObjPositionInParent')
+        folder_contents = portal_catalog(path=dict(query=currentpath, depth=1),
+                sort_on='getObjPositionInParent')
         if folder_contents:
             first_item = folder_contents[0]
-            if getSecurityManager().checkPermission(permissions.ModifyPortalContent, context):
+            if getSecurityManager().checkPermission(
+                    permissions.ModifyPortalContent,
+                    context):
                 messages = IStatusMessage(self.request)
-                msg = _(u'redirect_info', 
-                      default=_(u'You have been forwarded from "${title}". Use the menu "Manage redirect" to change this.'),
-                      mapping={'title': context.title})
+                msg = _(u'redirect_info',
+                    default=_(u'You have been forwarded from "${title_from}" '\
+                        '(<a href="${content_from}">contents</a> | '\
+                        '<a href="${changeview_from}">change view</a>) to '\
+                        '"${title_to}". Use the menu "Manage redirect" to '\
+                        'change this.'),
+                      mapping={'title_from': context.title,
+                               'title_to': first_item.Title,
+                               'content_from': context.absolute_url() +
+                                    '/folder_contents',
+                               'changeview_from': context.absolute_url() +
+                                    '/select_default_view',
+                               })
                 messages.addStatusMessage(msg, type="info")
             self.request.response.redirect(first_item.getURL())
         else:
