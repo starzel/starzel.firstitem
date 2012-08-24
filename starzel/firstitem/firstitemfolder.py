@@ -40,7 +40,7 @@ class FirstItemView(BrowserView):
                                'changeview_from': context.absolute_url() +
                                     '/select_default_view',
                                })
-                messages.addStatusMessage(msg, type="info")
+                messages.add(msg, type="info")
             self.request.response.redirect(first_item.getURL())
         else:
             return self.template()

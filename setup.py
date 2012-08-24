@@ -27,6 +27,7 @@ setup(name='starzel.firstitem',
           'setuptools',
           'Products.CMFPlone',
           'z3c.jbot',
+          'htmllaundry'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

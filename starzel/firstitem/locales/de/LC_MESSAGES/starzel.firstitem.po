@@ -41,5 +41,5 @@ msgstr "Zeigt die Inhalte des weiterleitenden Ordners mittels folder_contents an
 #. Default: "You have been forwarded from \"${title_from}\" (<a href=\"${content_from}\">contents</a> | <a href=\"${changeview_from}\">change view</a>) to \"${title_to}\". Use the menu \"Manage redirect\" to change this."
 #: ./firstitemfolder.py:30
 msgid "redirect_info"
-msgstr "Sie wurden von \"${title_from}\" (<a href=\"${content_from}\">Inhalte</a> | <a href=\"${changeview_from}\">Darstellung ändern</a>) nach \"${title_to}\" weitergeleitet . Verwenden Sie das Menu \"Weiterleitung bearbeiten\" um das zu ändern."
+msgstr "Sie wurden von \"${title_from}\" (<a href=\"${content_from}\">Inhalte</a> | <a href=\"${changeview_from}\">Darstellung ändern</a>) nach \"${title_to}\" weitergeleitet. Verwenden Sie das Menu \"Weiterleitung bearbeiten\" um das zu ändern."
 

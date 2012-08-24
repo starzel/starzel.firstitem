@@ -8,7 +8,7 @@
 
     <i18n:registerTranslations directory="locales"/>
     <include package="z3c.jbot" file="meta.zcml" />
-    
+
     <browser:jbot
         directory="jbot_templates"
         layer=".interfaces.IFirstItemLayer" />
@@ -44,5 +44,11 @@
         description="Installs the starzel.firstitem package"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
-  
+
+    <adapter
+        for=".interfaces.IFirstItemLayer"
+        provides="Products.statusmessages.interfaces.IStatusMessage"
+        factory=".adapter.StatusMessage"
+        />
+
 </configure>
