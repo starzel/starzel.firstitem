@@ -8,6 +8,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.statusmessages.interfaces import IStatusMessage
 from zope.component import getMultiAdapter
 from starzel.firstitem import FirstItemMessageFactory as _
+from Products.CMFPlone.utils import safe_unicode
 
 
 class FirstItemView(BrowserView):
@@ -33,8 +34,8 @@ class FirstItemView(BrowserView):
                         '<a href="${changeview_from}">change view</a>) to '\
                         '"${title_to}". Use the menu "Manage redirect" to '\
                         'change this.'),
-                      mapping={'title_from': context.title,
-                               'title_to': first_item.Title,
+                      mapping={'title_from': safe_unicode(context.title),
+                               'title_to': safe_unicode(first_item.Title),
                                'content_from': context.absolute_url() +
                                     '/folder_contents',
                                'changeview_from': context.absolute_url() +
