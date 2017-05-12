@@ -93,10 +93,10 @@
             class="actionMenu deactivated">
             <dt class="actionMenuHeader label-firstitemview_helper"
                 i18n:attributes="title">
-                <a href="#" 
+                <a href="#"
                    title="Manage the view of the folder that redirects to this page."
                    i18n:attributes="title">
-                    <span i18n:translate="" tal:omit-tag="">Manage redirect</span>    
+                    <span i18n:translate="" tal:omit-tag="">Manage redirect</span>
                     <span class="arrowDownAlternative">&#9660;</span>
                 </a>
             </dt>
@@ -115,7 +115,15 @@
                            title="Show contents of redirecting folder using folder_contents."
                            i18n:attributes="title"
                            i18n:translate="">
-                           Show content of redirecting folder 
+                           Show content of redirecting folder
+                        </a>
+                    </li>
+                    <li>
+                        <a tal:attributes="href string:${redirect_source}/edit"
+                           title="Edit redirecting folder."
+                           i18n:attributes="title"
+                           i18n:translate="">
+                           Edit redirecting folder
                         </a>
                     </li>
                 </ul>

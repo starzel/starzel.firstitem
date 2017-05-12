@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-08-23 16:25+0000\n"
+"POT-Creation-Date: 2017-05-12 08:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,18 @@ msgstr ""
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:106
 msgid "Change display of redirecting folder"
 msgstr "Darstellung des weiterleitenden Ordners anpassen"
+
+#: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:122
+msgid "Edit redirecting folder"
+msgstr "Weiterleitenden Ordner bearbeiten"
+
+#: ./configure.zcml:38
+msgid "Forward to first item"
+msgstr "Auf ersten Inhalt weiterleiten"
+
+#: ./configure.zcml:46
+msgid "Installs the starzel.firstitem package"
+msgstr ""
 
 #: ./jbot_templates/plone.app.contentmenu.contentmenu.pt:99
 msgid "Manage redirect"
@@ -38,8 +50,15 @@ msgstr "Inhalte des weiterleitenden Ordners anzeigen"
 msgid "Show contents of redirecting folder using folder_contents."
 msgstr "Zeigt die Inhalte des weiterleitenden Ordners mittels folder_contents an."
 
-#. Default: "You have been forwarded from \"${title_from}\" (<a href=\"${content_from}\">contents</a> | <a href=\"${changeview_from}\">change view</a>) to \"${title_to}\". Use the menu \"Manage redirect\" to change this."
-#: ./firstitemfolder.py:30
-msgid "redirect_info"
-msgstr "Sie wurden von \"${title_from}\" (<a href=\"${content_from}\">Inhalte</a> | <a href=\"${changeview_from}\">Darstellung ändern</a>) nach \"${title_to}\" weitergeleitet. Verwenden Sie das Menu \"Weiterleitung bearbeiten\" um das zu ändern."
+#: ./configure.zcml:38
+msgid "The viewer will be redirected to the first content-item inside this folder."
+msgstr "Der Besucher wird zum ersten Inhalt des Ordners weitergeleitet"
 
+#. Default: "You have been forwarded from \"${title_from}\" (<a href=\"${content_from}\">contents</a> | <a href=\"${changeview_from}\">change view</a> | <a href=\"${edit_from}\">edit</a>) to \"${title_to}\". Use the menu \"Manage redirect\" to change this."
+#: ./firstitemfolder.py:34
+msgid "redirect_info"
+msgstr "Sie wurden von \"${title_from}\" (<a href=\"${content_from}\">Inhalte</a> | <a href=\"${changeview_from}\">Darstellung ändern</a> | <a href=\"${edit_from}\">Bearbeiten</a>) nach \"${title_to}\" weitergeleitet. Verwenden Sie das Menu \"Weiterleitung bearbeiten\" um das zu ändern."
+
+#: ./configure.zcml:46
+msgid "starzel.firstitem"
+msgstr ""

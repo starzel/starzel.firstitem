@@ -1,27 +1,25 @@
-import logging
-from zope.annotation.interfaces import IAnnotations
-from zope.i18n import translate
-from Products.statusmessages import adapter
-from Products.statusmessages import STATUSMESSAGEKEY
+# -*- coding: utf-8 -*-
 from htmllaundry import cleaners
 from htmllaundry.utils import sanitize
+from Products.statusmessages import adapter
+from Products.statusmessages import STATUSMESSAGEKEY
+from zope.annotation.interfaces import IAnnotations
 
 
-msgcleaner = \
-    cleaners.LaundryCleaner(
-            page_structure = True,
-            safe_attrs_only = True,
-            remove_unknown_tags = False,
-            allow_tags = ["blockquote", "a", "em", "strong", "span"],
-            add_nofollow = True,
-            scripts = True,
-            javascript = False,
-            comments = True,
-            style = False,
-            processing_instructions = True,
-            frames = True,
-            annoying_tags = False,
-            link_target = "_blank")
+msgcleaner = cleaners.LaundryCleaner(
+    page_structure=True,
+    safe_attrs_only=True,
+    remove_unknown_tags=False,
+    allow_tags=["blockquote", "a", "em", "strong", "span"],
+    add_nofollow=True,
+    scripts=True,
+    javascript=False,
+    comments=True,
+    style=False,
+    processing_instructions=True,
+    frames=True,
+    annoying_tags=False,
+    link_target="_blank")
 
 
 class StatusMessage(adapter.StatusMessage):
